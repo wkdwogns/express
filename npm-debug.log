@@ -9,7 +9,7 @@
 6 silly lifecycle myapp@0.0.0~prestart: no script for prestart, continuing
 7 info lifecycle myapp@0.0.0~start: myapp@0.0.0
 8 verbose lifecycle myapp@0.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle myapp@0.0.0~start: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\express\myapp\node_modules\.bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Development\JDK8\bin;C:\Program Files\nodejs\;C:\Users\LinePlus\AppData\Roaming\npm
+9 verbose lifecycle myapp@0.0.0~start: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\express\myapp\node_modules\.bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Development\JDK8\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Git\cmd;C:\Users\LinePlus\AppData\Roaming\npm;C:\Users\LinePlus\AppData\Local\atom\bin
 10 verbose lifecycle myapp@0.0.0~start: CWD: C:\express\myapp
 11 silly lifecycle myapp@0.0.0~start: Args: [ '/d /s /c', 'node ./bin/www' ]
 12 silly lifecycle myapp@0.0.0~start: Returned: code: 3221225786  signal: null
