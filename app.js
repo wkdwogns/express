@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 var app = express();
 
 var mongoose    = require('mongoose');
-mongoose.connect('mongodb://localhost/soccer');
+mongoose.connect('mongodb://localhost:27017/soccer');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
