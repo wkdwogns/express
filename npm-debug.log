@@ -9,8 +9,13 @@
 6 silly lifecycle myapp@0.0.0~prestart: no script for prestart, continuing
 7 info lifecycle myapp@0.0.0~start: myapp@0.0.0
 8 verbose lifecycle myapp@0.0.0~start: unsafe-perm in lifecycle true
+<<<<<<< HEAD
 9 verbose lifecycle myapp@0.0.0~start: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\express\express\node_modules\.bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\wkdwo\AppData\Local\Microsoft\WindowsApps;C:\Users\wkdwo\AppData\Roaming\npm
 10 verbose lifecycle myapp@0.0.0~start: CWD: C:\express\express
+=======
+9 verbose lifecycle myapp@0.0.0~start: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\express\myapp\node_modules\.bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Development\JDK8\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Git\cmd;C:\Users\LinePlus\AppData\Roaming\npm;C:\Users\LinePlus\AppData\Local\atom\bin
+10 verbose lifecycle myapp@0.0.0~start: CWD: C:\express\myapp
+>>>>>>> 08d1814263e636c01b25ea516c14802054723047
 11 silly lifecycle myapp@0.0.0~start: Args: [ '/d /s /c', 'node ./bin/www' ]
 12 verbose stack Error: kill ENOSYS
 12 verbose stack     at exports._errnoException (util.js:1018:11)
