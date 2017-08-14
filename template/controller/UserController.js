@@ -1,4 +1,4 @@
-var carModel = require('../model/UserModel.js');
+var userModel = require('../model/UserModel.js');
 
 /**
  * carController.js
@@ -11,7 +11,7 @@ module.exports = {
      * carController.list()
      */
     list: function(req, res) {
-        carModel.find(function(err, cars){
+        userModel.find(function(err, cars){
             if(err) {
                 return res.status(500).json({
                     message: 'Error getting car.'
@@ -26,7 +26,7 @@ module.exports = {
      */
     show: function(req, res) {
         var id = req.params.id;
-        carModel.findOne({_id: id}, function(err, car){
+        userModel.findOne({_id: id}, function(err, car){
             if(err) {
                 return res.status(500).json({
                     message: 'Error getting car.'
@@ -64,7 +64,7 @@ module.exports = {
                 });
             }
 
-            carModel.find(function(err, cars){
+            userModel.find(function(err, cars){
 	            if(err) {
 	                return res.status(500).json({
 	                    message: 'Error getting car.'
@@ -85,7 +85,7 @@ module.exports = {
      */
     update: function(req, res) {
         var id = req.params.id;
-        carModel.findOne({_id: id}, function(err, car){
+        userModel.findOne({_id: id}, function(err, car){
             if(err) {
                 return res.status(500).json({
                     message: 'Error saving car',
@@ -99,7 +99,7 @@ module.exports = {
             }
 
             car.color =  req.body.color ? req.body.color : car.color;
-			car.door =  req.body.door ? req.body.door : car.door;
+			      car.door =  req.body.door ? req.body.door : car.door;
 
             car.save(function(err, car){
                 if(err) {
@@ -123,7 +123,7 @@ module.exports = {
     remove: function(req, res) {
         var id = req.query.id;
 
-        carModel.findByIdAndRemove(id, function(err, car){
+        userModel.findByIdAndRemove(id, function(err, car){
             if(err) {
                 return res.status(500).json({
                     message: 'Error getting car.'
