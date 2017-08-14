@@ -10,4 +10,4 @@ var uSchema = mongoose.Schema({
 	position : {type: String }
 });
 
-module.exports = mongoose.model('articles',uSchema); //database에 있는 users컬렉션과 uSchema와 매칭
+module.exports = mongoose.model('users',uSchema); //database에 있는 users컬렉션과 uSchema와 매칭
