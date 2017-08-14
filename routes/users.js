@@ -12,8 +12,6 @@ router.get('/write', carController.create);
 router.get('/remove', carController.remove);
 
 /* GET users listing. */
-router.get('/json', function(req, res, next) {
-  res.json({asd:'asd'});
-});
+router.get('/json', function(req, res, next) { res.json({asd:'asd'}); });
 
 module.exports = router;
