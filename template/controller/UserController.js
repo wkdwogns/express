@@ -1,4 +1,4 @@
-var carModel = require('../model/Model.js');
+var carModel = require('../model/UserModel.js');
 
 /**
  * carController.js
