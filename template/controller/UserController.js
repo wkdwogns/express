@@ -99,7 +99,6 @@ module.exports = {
             }
 
             car.color =  req.body.color ? req.body.color : car.color;
-			car.door =  req.body.door ? req.body.door : car.door;
 
             car.save(function(err, car){
                 if(err) {
