@@ -8,7 +8,7 @@ var cors = require('cors');
 
 var app = express();
 
-var mongoose    = require('mongoose');
+var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/soccer', { useMongoClient : true });
 
 var index = require('./routes/index');
