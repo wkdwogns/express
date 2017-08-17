@@ -13,6 +13,8 @@ mongoose.connect('mongodb://localhost:27017/soccer');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+var teams = require('./routes/teams');
+var matches = require('./routes/matches');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -29,8 +31,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', index);
-app.use('/users', users);
+app.use('/', index );
+app.use('/users', users );
+app.use('/teams', teams );
+app.use('/matches', matches );
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

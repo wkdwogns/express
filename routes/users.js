@@ -1,17 +1,14 @@
 var express = require('express');
 var router = express.Router();
 
-var carController = require('../template/controller/UserController.js');
+var userController = require('../template/controller/UserController.js');
 
 /* GET users listing. */
-router.get('/', carController.list );
+router.get('/', userController.list );
 
 /* GET users listing. */
-router.get('/write', carController.create);
+router.get('/write', userController.create);
 
-router.get('/remove', carController.remove);
-
-/* GET users listing. */
-router.get('/json', function(req, res, next) { res.json({asd:'asd'}); });
+router.get('/remove', userController.remove);
 
 module.exports = router;
