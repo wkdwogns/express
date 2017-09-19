@@ -7,7 +7,7 @@ var userController = require('../template/controller/UserController.js');
 router.get('/', userController.list );
 
 /* GET users listing. */
-router.get('/write', userController.create);
+router.post('/write', userController.create);
 
 router.get('/remove', userController.remove);
 

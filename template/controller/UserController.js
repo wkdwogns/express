@@ -50,13 +50,17 @@ module.exports = {
     	console.log(req.body); //post 로 보낼때
     	console.log(req.hostname);
     	console.log(req.originalUrl);
+      console.log(1234);
 
-        var car = new carModel({
-			       userid : req.query.userid,
-			       name : req.query.name
+        var user = new userModel({
+			       userid : req.body.id,
+             password : req.body.password,
+			       name : req.body.name,
+             email : req.body.email,
+             phone : req.body.phone
         });
 
-        car.save(function(err, car){
+        user.save(function(err, user){
             if(err) {
                 return res.status(500).json({
                     message: 'Error saving car',
@@ -64,13 +68,13 @@ module.exports = {
                 });
             }
 
-            userModel.find(function(err, cars){
+            userModel.find(function(err, users){
 	            if(err) {
 	                return res.status(500).json({
 	                    message: 'Error getting car.'
 	                });
 	            }
-	            return res.json(cars);
+	            return res.json(users);
 	        });
 
             /*return res.json({
