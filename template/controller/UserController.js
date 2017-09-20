@@ -50,7 +50,6 @@ module.exports = {
     	console.log(req.body); //post 로 보낼때
     	console.log(req.hostname);
     	console.log(req.originalUrl);
-      console.log(1234);
 
         var user = new userModel({
 			       userid : req.body.id,
