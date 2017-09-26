@@ -9,6 +9,8 @@ router.get('/', userController.list );
 /* GET users listing. */
 router.post('/write', userController.create);
 
+router.post('/show', userController.show);
+
 router.get('/remove', userController.remove);
 
 module.exports = router;

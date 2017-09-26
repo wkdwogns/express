@@ -25,8 +25,11 @@ module.exports = {
      * carController.show()
      */
     show: function(req, res) {
-        var id = req.params.id;
+
+        var id = req.body.id;
+        console.log(req);
         userModel.findOne({_id: id}, function(err, car){
+          console.log(car);
             if(err) {
                 return res.status(500).json({
                     message: 'Error getting car.'
