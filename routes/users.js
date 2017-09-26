@@ -11,6 +11,8 @@ router.post('/write', userController.create);
 
 router.post('/show', userController.show);
 
+router.post('/update', userController.update);
+
 router.get('/remove', userController.remove);
 
 module.exports = router;

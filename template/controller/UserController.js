@@ -91,21 +91,27 @@ module.exports = {
      */
     update: function(req, res) {
         var id = req.params.id;
-        userModel.findOne({_id: id}, function(err, car){
+        userModel.findOne({_id: id}, function(err, user){
             if(err) {
                 return res.status(500).json({
                     message: 'Error saving car',
                     error: err
                 });
             }
-            if(!car) {
+            if(!user) {
                 return res.status(404).json({
                     message: 'No such car'
                 });
             }
 
-            car.color =  req.body.color ? req.body.color : car.color;
-			      car.door =  req.body.door ? req.body.door : car.door;
+            user.color =  req.body.color ? req.body.color : car.color;
+			      user.door =  req.body.door ? req.body.door : car.door;
+
+            userid : req.body.id,
+            password : req.body.password,
+            name : req.body.name,
+            email : req.body.email,
+            phone : req.body.phone
 
             car.save(function(err, car){
                 if(err) {
